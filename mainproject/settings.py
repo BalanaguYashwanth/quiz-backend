@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+    'practice.apps.PracticeConfig',
     'lms.apps.LmsConfig',
     'pg.apps.PgConfig',
     'rest_framework',
@@ -89,7 +90,7 @@ WSGI_APPLICATION = 'mainproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'lms',
+        'NAME': 'practice',
         'USER': 'postgres',
         'PASSWORD': 'postgres',
         'HOST':'localhost'
